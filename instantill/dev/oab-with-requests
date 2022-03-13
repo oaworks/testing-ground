@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- https://oaworks.github.io/testing-ground/instantill/dev/oab-with-requests -->
+
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>hom</title>
+    <link rel="icon" href="/playground/favicon.ico" type="image/x-icon" />
+  </head>
+
+ <body>
+
+   <div id="instantill"></div>
+<script src="https://instantill.org/embed.js"></script>
+<script>_oab=instantill({config: {"ill_if_oa_off":true,"intro_off":true,"ill_form":"https://dev.openaccessbutton.org/requests","sid":"ignore","title":"ignore.atitle","journal":"ignore.title","doi":"doi","author":"ignore.au","issn":"ignore.issn","volume":"ignore.vol","issue":"ignore.issue","type":"ignore.types","page":"ignore.pages","published":"ignore.date","pmid":"ignore.pmid","year":"ignore.year","notes":"ignore.notes"}});</script>
+ </body>
+
+</html>
