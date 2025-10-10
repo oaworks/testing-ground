@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- https://oaworks.github.io/testing-ground/embedoa/dev/ufv -->
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>EmbedOA — dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="https://dev.openaccessbutton.org/static/bootstrap.min.css">
+  <link rel="stylesheet" href="https://static-assets-ca.libguides.com/web/jquery/css/jquery-ui.min.css?2691" />
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <link rel="stylesheet" type="text/css" href="https://static-assets-ca.libguides.com/web/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://static-assets-ca.libguides.com/web/slick-1.8.1/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="https://static-assets-ca.libguides.com/web/css3.20.3/lg-public.min.css" />
+</head>
+<body>
+  <h1>EmbedOA (Open Access Button widget) — dev</h1>
+  <div id="openaccessbutton_widget"></div>
+
+  
+  <script src="https://dev.openaccessbutton.org/static/jquery-1.10.2.min.js"></script>
+  <script src="https://dev.openaccessbutton.org/static/openaccessbutton_widget.js"></script>
+  <script>
+    jQuery(function () {
+      openaccessbutton_widget({
+        element: '#openaccessbutton_widget',
+        css: false
+      });
+    });
+  </script>
+</body>
+</html>
