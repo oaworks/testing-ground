@@ -1,6 +1,6 @@
 # testing-ground
 
-A stable environment to test ShareYourPaper outside our normal infrastructure. Each page is a pretend library website that loads the embed with one set of institution settings (`config`). GitHub Pages serves them at `https://oaworks.github.io/testing-ground/<path>`, with no build step: changes pushed to `master` go live within a minute or two.
+A stable environment to test ShareYourPaper outside our normal infrastructure. Each page is a mock library website that loads the embed with one set of institution settings (`config`). GitHub Pages serves them at `https://oaworks.github.io/testing-ground/<path>`, with no build step: changes pushed to `master` go live within a minute or two.
 
 This repo also tested InstantILL and embedOA, which have both been retired: `instantill/` and `embedoa/` are kept for reference only, and their Ghost Inspector tests are archived.
 
@@ -28,12 +28,12 @@ Copy a page in `shareyourpaper/dev/` and change its `config`. Use `example.edu` 
 
 ## Running locally
 
-From the repo root, serve the parent folder so URLs keep the `/testing-ground/` prefix:
+From the repo root:
 
 ```
-cd .. && python3 -m http.server 8000
+python3 -m http.server 8000
 ```
 
-Then open e.g. `http://localhost:8000/testing-ground/shareyourpaper/dev/default.html`. Include `.html`, which GitHub Pages lets you leave out.
+Then open e.g. `http://localhost:8000/shareyourpaper/dev/default.html`. Include `.html`, which GitHub Pages lets you leave out.
 
-To try unreleased embed code, point a page’s script tag at a `shareyourpaper` checkout in the same parent folder (`/shareyourpaper/content/embed.js`), and change it back before committing. Ghost Inspector runs in the cloud, so it can only test the GitHub Pages copy.
+To try unreleased embed code, also run `python3 -m http.server 8001` in a `shareyourpaper` checkout, and point a page’s script tag at `http://localhost:8001/content/embed.js`. Change it back before committing. Ghost Inspector runs in the cloud, so it can only test the GitHub Pages copy.

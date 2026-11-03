@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- https://oaworks.github.io/testing-ground/ -->
+<!-- Shows README.MD, so the README stays the only copy to edit -->
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>testing-ground</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/2.1.1/pico.classless.min.css" integrity="sha512-aBdxMsQGk5sActZ9xbTShdaOySmFyjXTdNCs111Sfrsy1rJbIGWbyFqcyeqrgO+SRWl9CUQbExqCXFToUmBMZg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/18.1.3/lib/marked.umd.min.js" integrity="sha512-aGS0R+ig5xP86FA70qY4Rk8EstGqd6T0r60hdSAIEMN4LicYom0kwwNl6IsqQ3lYHEGsgQI0cmIRpUBl9vSpmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+
+ <body>
+<main id="readme">
+  <p><a href="https://github.com/oaworks/testing-ground#readme">View the README on GitHub</a></p>
+</main>
+<script>
+fetch('README.MD')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+  .then(md => { document.getElementById('readme').innerHTML = marked.parse(md); })
+  .catch(() => {}); // keep the GitHub link if anything fails
+</script>
+ </body>
+
+</html>
