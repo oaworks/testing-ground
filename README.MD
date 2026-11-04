@@ -2,13 +2,10 @@
 
 A stable environment to test ShareYourPaper outside our normal infrastructure. Each page is a mock library website that loads the embed with one set of institution settings (`config`). GitHub Pages serves them at `https://oaworks.github.io/testing-ground/<path>`, with no build step: changes pushed to `master` go live within a minute or two.
 
-This repo also tested InstantILL and embedOA, which have both been retired: `instantill/` and `embedoa/` are kept for reference only, and their Ghost Inspector tests are archived.
-
 ## Layout
 
 - `shareyourpaper/dev/`: the dev embed (`dev.shareyourpaper.org/embed.js`) against the beta API. Tests use these.
 - `shareyourpaper/live/`: the live embed, mostly copies of real institutions’ set-ups.
-- `local-embed/`: a copy of `embed.js`, for trying out unreleased code.
 
 ## Pages used by Ghost Inspector
 
