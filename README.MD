@@ -14,7 +14,9 @@ All tests below are in the [ShareYourPaper Website](https://app.ghostinspector.c
 | Page | Config | Tests |
 |---|---|---|
 | [`dev/default`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/default) | `owner` | [dark deposit (library default)](https://app.ghostinspector.com/tests/698f58e862ccce610d71b1ff), [go back (general)](https://app.ghostinspector.com/tests/698f58e862ccce610d71b204), [redeposit (library default)](https://app.ghostinspector.com/tests/698f58e862ccce610d71b20d) |
-| [`dev/default-with-owner`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/default-with-owner) | `owner` | [url update on entry & restart (embed)](https://app.ghostinspector.com/tests/698f58e862ccce610d71b214) |
+| [`dev/default-with-owner`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/default-with-owner) | `owner` | [url update on entry & restart (embed)](https://app.ghostinspector.com/tests/698f58e862ccce610d71b214), [no-DOI link (owner only)](https://app.ghostinspector.com/tests/6afdf70ed91c3d29ed5dc55d) |
+| [`dev/nodoi-old-way-form`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/nodoi-old-way-form) | `owner`, `old_way` (a form URL) | [no-DOI link (old_way form)](https://app.ghostinspector.com/tests/6afdf2b11bafb433d7121713) |
+| [`dev/nodoi-no-contact`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/nodoi-no-contact) | none | [no-DOI link (no contact set)](https://app.ghostinspector.com/tests/6afdf63cd91c3d29ed5db1cb) |
 | [`dev/community`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/community) | `owner`, `community` | [AAM upload to community](https://app.ghostinspector.com/tests/698f58e862ccce610d71b1fa) |
 | [`dev/pilot-mode-on`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/pilot-mode-on) | `owner`, `pilot` | [pilot mode](https://app.ghostinspector.com/tests/698f58e862ccce610d71b20b) |
 | [`dev/with-policy`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/with-policy) | `owner`, `ror` | [oa policy response override](https://app.ghostinspector.com/tests/698f58e862ccce610d71b20a) |
