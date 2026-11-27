@@ -20,6 +20,9 @@ All tests below are in the [ShareYourPaper Website](https://app.ghostinspector.c
 | [`dev/community`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/community) | `owner`, `community` | [AAM upload to community](https://app.ghostinspector.com/tests/698f58e862ccce610d71b1fa) |
 | [`dev/pilot-mode-on`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/pilot-mode-on) | `owner`, `pilot` | [pilot mode](https://app.ghostinspector.com/tests/698f58e862ccce610d71b20b) |
 | [`dev/with-policy`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/with-policy) | `owner`, `ror` | [oa policy response override](https://app.ghostinspector.com/tests/698f58e862ccce610d71b20a) |
+| [`dev/zenodo`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/zenodo) | `owner` | [SYP open deposit is published on Zenodo with its file and metadata](https://app.ghostinspector.com/tests/6b09becd531271b690b7936f) |
+| [`dev/zenodo-community`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/zenodo-community) | `owner`, `community` | [SYP embargoed deposit is embargoed on Zenodo and in its community](https://app.ghostinspector.com/tests/6b09becd6a68569e23d913a4) |
+| [`dev/forward`](https://oaworks.github.io/testing-ground/shareyourpaper/dev/forward) | `owner` | [SYP sends a flagged file to the library when the depositor confirms it](https://app.ghostinspector.com/tests/6b09becd6a68569e23d913c9) |
 
 ## Adding a page
 
